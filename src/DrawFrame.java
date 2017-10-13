@@ -17,7 +17,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
 
-
+// edit test b1
 public class DrawFrame extends JFrame {
 	String filename;
 	Graph WordGraph = new Graph();
@@ -33,7 +33,7 @@ public class DrawFrame extends JFrame {
 	JLabel label = new JLabel();
 	private JPanel myPanel;
 	public DrawFrame()
-	{   
+	{
 		try{
 		UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
 		}catch (Exception e){e.printStackTrace();}
@@ -44,42 +44,42 @@ public class DrawFrame extends JFrame {
 		setSize(2*screenWidth/10,2*screenWidth/10);
 		setLocationByPlatform(true);
 		myPanel = new JPanel();
-		
+
 		OpenAction openAction = new OpenAction();
 		Open.addActionListener(openAction);
-		
+
 		myPanel.add(Word1);
 		myPanel.add(Word2);
-		
+
 		queryBridgeWordsAction QueryBridgeWordsAction = new queryBridgeWordsAction();
 		QueryBridgeWords.addActionListener(QueryBridgeWordsAction);
-		
+
 		showGraphAction ShowGraph = new showGraphAction();
 		Show.addActionListener(ShowGraph);
-		
+
 		myPanel.add(Open);
 		myPanel.add(QueryBridgeWords);
 		myPanel.add(Show);
 		myPanel.add(label);
-		
+
 		add(myPanel);
-		
+
 	}
 	/**
 	 * choose and open file
-	 * 
+	 *
 	 * @author LJR
 	 *
 	 */
 	private class OpenAction implements ActionListener
 	{
 		@Override
-		public void actionPerformed(ActionEvent e) {  
-	        // TODO Auto-generated method stub  
-	        JFileChooser jfc=new JFileChooser();  
-	        jfc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES );  
-	        jfc.showDialog(new JLabel(), "Ñ¡Ôñ");  
-	        File file=jfc.getSelectedFile();   
+		public void actionPerformed(ActionEvent e) {
+	        // TODO Auto-generated method stub
+	        JFileChooser jfc=new JFileChooser();
+	        jfc.setFileSelectionMode(JFileChooser.FILES_AND_DIRECTORIES );
+	        jfc.showDialog(new JLabel(), "Ñ¡Ôñ");
+	        File file=jfc.getSelectedFile();
 	        filename =  file.getAbsolutePath();
 	        System.out.println(filename);
 	        WordGraph = MyFile.createDirectedGraph(filename);
@@ -87,9 +87,9 @@ public class DrawFrame extends JFrame {
 	        	System.out.println(0);
 		}
 	}
-	
+
 	private class queryBridgeWordsAction implements ActionListener
-	{	
+	{
 		String word1,word2;
 		@Override
 		public void actionPerformed(ActionEvent e) {
@@ -122,10 +122,10 @@ public class DrawFrame extends JFrame {
 				ShowGraph.showDirectedGraph(WordGraph);
 				flush();
 				JOptionPane.showMessageDialog(null,S,"BridgeWords:",JOptionPane.PLAIN_MESSAGE);
-			
+
 			}
 		}
-		
+
 	}
 	private class showGraphAction implements ActionListener
 	{
