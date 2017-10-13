@@ -1,5 +1,7 @@
 import java.util.Random;
+
 // edit test b1
+
 public class GenerateNewText {
 	static Graph tempGraph;
 	public static String generateNewText(Graph wordGraph, String Text) {

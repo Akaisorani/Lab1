@@ -1,6 +1,8 @@
 import java.util.Properties;
 import java.io.FileInputStream;
+
 // edit test b1
+
 /**
  * Load Config from config.properties.
  * <p>tmpPath, dotForWindows, dotForLinux.

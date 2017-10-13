@@ -3,7 +3,9 @@
  * <p>contains from,to,weight and color properties.
  * @author HanYue
  *
- */// edit test b1
+
+ */
+ // edit test b1
 public class Edge {
 	public String from,to;
 	public int weight;

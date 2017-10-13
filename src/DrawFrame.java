@@ -18,6 +18,7 @@ import javax.swing.JTextField;
 import javax.swing.UIManager;
 
 // edit test b1
+
 public class DrawFrame extends JFrame {
 	String filename;
 	Graph WordGraph = new Graph();
