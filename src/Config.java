@@ -1,22 +1,22 @@
 import java.util.Properties;
 import java.io.FileInputStream;
-
+// edit test2 c4
 /**
- * Load Config from config.properties. 
+ * Load Config from config.properties.
  * <p>tmpPath, dotForWindows, dotForLinux.
  * @author HanYue
  *
  */
 public class Config {
 	public static String tmpPath,dotForWindows,dotForLinux;
-	
+
 	/**
 	 * load config.properties when start.
 	 */
 	static {
 		loadConfig();
 	}
-	
+
 	/**
 	 * load config.properties at the root directory of project.
 	 */
@@ -31,10 +31,10 @@ public class Config {
 		tmpPath=p.getProperty("tmpPath");
 		dotForWindows=p.getProperty("dotForWindows");
 		dotForLinux=p.getProperty("dotForLinux");
-		
+
 		//prepare();
 	}
-	
+
 	/**
 	 * Create temp directory if not existed(not used now).
 	 */
