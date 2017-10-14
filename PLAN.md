@@ -78,7 +78,7 @@
 
 ### String calcShortestPath(Graph G, String word1, String word2):计算两个单词最短路径
 
-* 最短路搞一下, Dijkstra什么的
+* 最短路搞一下, Dijkstra什么的,spfa什么的
 ---
 
 ### String randomWalk(Graph G):随机游走

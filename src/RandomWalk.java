@@ -14,6 +14,7 @@ public class RandomWalk {
 	private Set<String> eSet;
 	/**
 	 * Construct randomWalk() with a graph and a start node.
+	 * <p>clear will also generate start node.
 	 * @param G Graph
 	 * @param name String
 	 */

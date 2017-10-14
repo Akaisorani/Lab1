@@ -40,4 +40,5 @@ Show a sentence as a graph and do some operations on it.
 
 * 点击开始随机游走后，点一次走一步
 * 经过的路径会在图上动态显示
+* 经过重复的边后会自动停止
 ---
