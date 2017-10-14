@@ -40,7 +40,7 @@ public class RandomWalk {
 	 */
 	public void setStartNode(Graph G, String name) {
 		clear(G);
-		this.startNode=G.getNode(name);
+		this.startNode=G.getNode(name); 
 	}
 	
 	/**
