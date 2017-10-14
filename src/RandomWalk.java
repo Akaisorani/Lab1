@@ -7,7 +7,7 @@ import java.util.Set;
  * @author HanYue
  *
  */
-public class RandomWalk {
+public class RandomWalk { 
 	private Node nowNode,startNode;
 	private StringBuilder path;
 	private boolean stop;
