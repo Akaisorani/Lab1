@@ -1,4 +1,4 @@
-# SE-EX1-WordGraph
+﻿# SE-EX1-WordGraph
 Show a sentence as a graph and do some operations on it.
 
 ### Function 1 : 生成并展示有向图
@@ -17,7 +17,7 @@ Show a sentence as a graph and do some operations on it.
 
 ### Function3 : 根据桥接词生成新文本
 
-* 输入文本，在相邻单词间随机插入桥接词并输出
+* 输入文本，在相邻单词间随机插入桥接词并输出新文本
 ---
 
 ### Function4 : 计算两个单词最短路径
