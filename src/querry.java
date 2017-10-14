@@ -3,7 +3,7 @@ public class querry {
 	public static String queryBridgeWords(Graph wordGraph, String word1, String word2) {
 		// TODO Auto-generated method stub
 		
-		Node node1 = wordGraph.getNode(word1);
+		Node node1 = wordGraph.getNode(word1); 
 		Node node2 = wordGraph.getNode(word2);
 		String S = ""; 
 		if (node1 == null && node2 == null) return "3";

@@ -6,7 +6,7 @@
 	
 	Map <name,node>
 	
-	Void addNode(String name);
+	Void addNode(String name); 
 	
 	void deleteNode(String name);
 	
