@@ -12,7 +12,7 @@ Show a sentence as a graph and do some operations on it.
 ### Function2 : 查询桥接词
 
 * 输入两个单词，查询原文中两个单词相连的所有中间单词
-* 同时图上高亮出这样的三元组结构
+* 同时图上高亮出这样的三元组结构 
 ---
 
 ### Function3 : 根据桥接词生成新文本
