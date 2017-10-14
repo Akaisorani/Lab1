@@ -1,4 +1,4 @@
-### main(String[] args):主程序入口，接收用户输文件生成图并允许后项操作。
+﻿### main(String[] args):主程序入口，接收用户输文件生成图并允许后项操作。
 
 **Class Graph{**
 
@@ -62,7 +62,7 @@
 
 * 扫描G制作dot文件 `graph.gv`
 * 调用Graphviz生成图片 `img.png`
-* 直接打开图片或者嵌入
+* 直接打开图片或者嵌入窗口
 ---
 
 ### String queryBridgeWords(Graph G, String word1,String word2):查询桥接词

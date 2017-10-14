@@ -34,6 +34,7 @@ Show a sentence as a graph and do some operations on it.
 * 点击开始随机游走后开始自动游走，每1秒走一步
 * 经过的路径会在图上动态显示
 * 点击停止则会停止随机游走
+* 经过重复的边后会自动停止
 
 ##### 风格2 : 手动游走
 
