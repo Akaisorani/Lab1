@@ -3,9 +3,9 @@ public class querry {
 	public static String queryBridgeWords(Graph wordGraph, String word1, String word2) {
 		// TODO Auto-generated method stub
 		
-		Node node1 = wordGraph.getNode(word1);//get the node of word1
+		Node node1 = wordGraph.getNode(word1);
 		Node node2 = wordGraph.getNode(word2);
-		String S = ""; 
+		String S = "";
 		if (node1 == null && node2 == null) return "3";
 		else if (node1 == null) return "1";
 		else if (node2 == null) return "2";

@@ -1,5 +1,7 @@
 import java.util.Random;
 
+// edit test b1
+
 public class GenerateNewText {
 	static Graph tempGraph;
 	public static String generateNewText(Graph wordGraph, String Text) {
@@ -33,7 +35,7 @@ public class GenerateNewText {
 						if (nowString.toLowerCase().equals(lastString.toLowerCase())&&nowString.toLowerCase().equals(tempans.toLowerCase())&&edge2.weight < 2)continue;
 						if (tempString.equals(""))
 							tempString = tempString + tempans;
-						else 
+						else
 							tempString = tempString + " " + tempans;
 					}
 				}

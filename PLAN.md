@@ -1,4 +1,4 @@
-﻿### main(String[] args):主程序入口，接收用户输文件生成图并允许后项操作。
+﻿### main(String[] args):主程序入口，接收用户输文件生成图并允许后项操作。这是新加入的修改
 
 **Class Graph{**
 
@@ -6,11 +6,11 @@
 	
 	Map <name,node>
 	
-	Void addNode(String name); 
+	Void addNode(String name);
 	
 	void deleteNode(String name);
 	
-	Void addEdge(String u,String v,int weight = 1); 
+	Void addEdge(String u,String v,int weight = 1);
 	
 	void deleteEdge(String from, String to);
 	
@@ -62,7 +62,7 @@
 
 * 扫描G制作dot文件 `graph.gv`
 * 调用Graphviz生成图片 `img.png`
-* 直接打开图片或者嵌入窗口
+* 直接打开图片或者嵌入
 ---
 
 ### String queryBridgeWords(Graph G, String word1,String word2):查询桥接词
@@ -78,7 +78,7 @@
 
 ### String calcShortestPath(Graph G, String word1, String word2):计算两个单词最短路径
 
-* 最短路搞一下, Dijkstra什么的,spfa什么的
+* 最短路搞一下, Dijkstra什么的
 ---
 
 ### String randomWalk(Graph G):随机游走

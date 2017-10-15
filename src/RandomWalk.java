@@ -1,20 +1,19 @@
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
-
+// edit b2
 /**
  * Do the random walk and return the node name passed.
  * @author HanYue
  *
  */
-public class RandomWalk { 
+public class RandomWalk {
 	private Node nowNode,startNode;
 	private StringBuilder path;
 	private boolean stop;
 	private Set<String> eSet;
 	/**
 	 * Construct randomWalk() with a graph and a start node.
-	 * <p>clear will also generate start node.
 	 * @param G Graph
 	 * @param name String
 	 */
@@ -25,7 +24,7 @@ public class RandomWalk {
 		this.stop=false;
 		this.eSet=new HashSet<>();
 	}
-	
+
 	/**
 	 * random select a start node.
 	 * @param G Graph
@@ -33,7 +32,7 @@ public class RandomWalk {
 	public RandomWalk(Graph G) {
 		this(G,G.getNodeList().get(randomInt(0,G.getNodeList().size()-1)).name);
 	}
-	
+
 	/**
 	 * Reset the Graph and start with another node.
 	 * @param G Graph
@@ -41,9 +40,9 @@ public class RandomWalk {
 	 */
 	public void setStartNode(Graph G, String name) {
 		clear(G);
-		this.startNode=G.getNode(name); 
+		this.startNode=G.getNode(name);
 	}
-	
+
 	/**
 	 * Clear the graph and the path, the start node will be regenerate randomly.
 	 * @param G Graph
@@ -55,7 +54,7 @@ public class RandomWalk {
 		this.stop=false;
 		this.eSet.clear();
 	}
-	
+
 	/**
 	 * generate a random int between l and r.
 	 * inclusive [l,r]
@@ -67,7 +66,7 @@ public class RandomWalk {
 		if(r<=0 || l>r)return 0;
 		return new Random().nextInt(((r+1+r-l)/(r-l+1))*(r-l+1))%(r-l+1)+l;
 	}
-	
+
 	/**
 	 * Move to next node and return the node name.
 	 * <p>if can't move,return null.
@@ -86,17 +85,17 @@ public class RandomWalk {
 		}
 		Edge nextEdge = nowNode.edges.get(randomInt(0,nowNode.edges.size()-1));
 		Node nextNode=G.getNode(nextEdge.to);
-		if(eSet.contains(nextEdge.from+"->"+nextEdge.to)) 
+		if(eSet.contains(nextEdge.from+"->"+nextEdge.to))
 			stop=true;
-		else 
+		else
 			eSet.add(nextEdge.from+"->"+nextEdge.to);
-		
+
 		path.append(nextNode.name);
 		nowNode=nextNode;
-		
+
 		return nowNode;
 	}
-	
+
 	/**
 	 * Check whether can move to the next node.
 	 * @return  Boolean
@@ -104,7 +103,7 @@ public class RandomWalk {
 	public boolean hasNext() {
 		return !stop && ((startNode!=null && nowNode==null) || (nowNode!=null && nowNode.edges.size()>0));
 	}
-	
+
 	/**
 	 * Take a move and return the node name.
 	 * @param G Graph
@@ -115,7 +114,7 @@ public class RandomWalk {
 		if(node==null)return "";
 		else return node.name;
 	}
-	
+
 	/**
 	 * Get the path that the random walk has passed.
 	 * start-&gt;B-&gt;C-&gt;now
